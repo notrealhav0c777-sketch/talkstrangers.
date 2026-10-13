@@ -1,0 +1,10 @@
+TalkStrangers - site de salas secretas (1 arquivo, sem servidor seu)
+
+Como colocar no ar:
+- Vercel: dentro desta pasta rode "npx vercel" (depois "npx vercel --prod"), ou envie a pasta ao GitHub e importe na Vercel.
+- Netlify: arraste a pasta em app.netlify.com/drop.
+- Testar: abra o index.html no navegador.
+
+Como funciona: o codigo da sala vira a chave de criptografia (AES-256). As mensagens passam pelo rele publico gratuito ntfy.sh ja criptografadas,
+entao so quem tem o codigo le. As salas guardam cerca de 12 horas de historico; depois disso, sem conversa, o codigo expira.
+Se o ntfy.sh ficar fora do ar ou bloquear o limite de mensagens, o chat avisa.
